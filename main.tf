@@ -6,6 +6,8 @@ resource "aws_vpc" "main" {
 
 }
 
+
+
 # resource "aws_subnet" "public" {
 # count = length(var.subnet_data)
 
@@ -36,6 +38,7 @@ resource "aws_subnet" "public" {
     Name = "${var.vpc_name} - public${count.index + 1}"
   }
 }
+
 
 #internet gateway
 resource "aws_internet_gateway" "gw" {

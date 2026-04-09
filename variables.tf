@@ -12,30 +12,6 @@ variable "vpc_name" {
   type        = string
 }
 
-# subnet data
-# list = ["kajal", "kajal2"]
-
-# first lecture used code
-# variable "subnet_data" {
-#     description = "List of maps containing subnet data (name, cidr, availability_zone)"
-#     type        = list(object({
-#         #name              = string
-#         public          = bool
-#         cidr              = string
-#         availability_zone = string
-#     }))
-# }
-
-#will use this public = true component in tfvars not this below code
-
-#   variable "if_public" {
-#     description = "Whether the subnet is public or private"
-#     type        = bool
-#     default     = true #public by default
-# }  till 1:18 lecture
-
-## 2nd lecture
-
 variable "private_subnet_data" {
   type = list(object({
     cidr              = string
