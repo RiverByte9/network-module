@@ -98,7 +98,7 @@ resource "aws_nat_gateway" "nat" {
 
   tags = {
     Name = "${var.vpc_name}-nat-gw-${count.index + 1}"
-  }
+  }  
 }
 
 # route for NAT gateway in private route tables
